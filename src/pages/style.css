@@ -1,7 +1,8 @@
 .highlight {
-    background: #c2c210;
-    padding: 0 2px;
-    margin: 0 2px;
+    background: none;
+    color: yellow;
+    padding: 0;
+    text-decoration: underline;
 }
 
 .form-control {
