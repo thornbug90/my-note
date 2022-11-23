@@ -1,0 +1,32 @@
+.highlight {
+    background: #c2c210;
+    padding: 0 2px;
+    margin: 0 2px;
+}
+
+.form-control {
+    background: #494646;
+    color: white;
+}
+
+.form-control:focus {
+    background: #494646;
+    color: white;
+}
+
+.accordion-button,
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    padding: 10px;
+    background: #333333;
+    color: white;
+}
+
+.accordion-item {
+    color: white;
+    background: #414141;
+}
+
+.white {
+    color: white !important;
+}
