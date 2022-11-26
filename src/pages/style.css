@@ -16,16 +16,20 @@
 }
 
 .accordion-button,
-.accordion-button:focus,
 .accordion-button:not(.collapsed) {
     padding: 10px;
     background: #333333;
     color: white;
 }
 
+.accordion-button:focus {
+    background: #282b31;
+}
+
 .accordion-item {
     color: white;
-    background: #414141;
+    background: #4b4b4b;
+    margin: 3px 0;
 }
 
 .white {
