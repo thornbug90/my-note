@@ -71,7 +71,7 @@ const data = [
         content: `DL front: https://drive.google.com/file/d/19dV3fFuSlf5pYyQiafSKLxIK-QDijHvM/view?usp=share_link,
         DL back: https://drive.google.com/file/d/1BKM91nW3dNNGI2ZeWcwXg2NefYeeQJ1R/view?usp=share_link,
         SSN: https://drive.google.com/file/d/1t4Ezy7EaaWTElRrANWno9NO5GNcVxhmY/view?usp=share_link,
-        linked: https://www.linkedin.com/in/john-michael-b57a18243/`
+        LinkedIn: https://www.linkedin.com/in/john-michael-b57a18243/`
     },
     {
         title: "What do you feel about the Los Angeles?",
@@ -116,6 +116,24 @@ const data = [
         content: ``
     },
     {
+        title: "Tell me about a conflict you’ve faced at work and how you dealt with it.",
+        type: 0,
+        content: `In my previous job as a senior engineer, I performed tasks for two different managers. I found myself in a situation where both managers were demanding a lot of my time and resources and I was forced to say 'no' to some of their tasks or else I’d fall severely behind on the higher-priority tasks.
+
+        At first, one of my managers was visibly upset. I quickly realized that I hadn’t done a good enough job of explaining the situation. I quickly asked to meet one-on-one and told the manager why I didn’t have as much time available as he thought. He immediately understood and I was able to avoid a bigger conflict.
+        
+        It turned out that neither manager realized how busy I was. They ended up speaking with each other and coming up with a plan that would lighten my workload so that I could continue to perform the most important tasks for both of them.`
+    },
+    {
+        title: "Give me an example of how you have worked on teams. What role did you play?",
+        type: 0,
+        content: `In my last job, I was frequently required to interact with many different groups in the company like finance, accounting, sales, customer service, and more. I’ve also worked on projects with five other colleagues in my own group.
+
+        In those cases, I played the role of a specialist because I’m the only team member who is familiar with AWS and full stack development. So I provided expert insight into that area, and they handled the other areas.
+        
+        My understanding, based on reading the job description for this position, is that you need that same skill set in your group right now. Is that correct? And can you talk about what the scope of the project is.`
+    },
+    {
         title: "Tell me about your last company.",
         type: 0,
         content: `loanDepot:
@@ -132,9 +150,16 @@ const data = [
         It was a great place to work too.`
     },
     {
-        title: "Tell me about a joke.",
+        title: "Tell me about a joke, humor.",
         type: 0,
-        content: ``
+        content: `John had been undergoing tests for a serious health concern for several weeks. Finally it was the day for him to receive his test results.
+
+        So he was sitting in his doctor’s office and he said, “Doc, I really need to know my test results! Not knowing is driving me crazy.“
+        His doctor reviewed at his notes again and then said, “Well John, there’s some good news and some bad news I’m afraid. Which one do you want first?”
+        
+        To which John replied, “I think I’d prefer the good news first. Yeah Doc, let me have the good news first!”
+        
+        “Well,” said the doctor, “I hear there are some amazing deals on cremations this week.“`
     },
     {
         title: "What did you learn from the freelancing?",
@@ -220,7 +245,7 @@ const data = [
     {
         title: "What is your personality?",
         type: 0,
-        content: ``
+        content: `Team player, confident, Ambitious and friendly are three words I'd pick to describe myself.`
     },
     {
         title: "Briefly summarize your recent contributions to either a web application or API service.",
@@ -265,7 +290,9 @@ const data = [
     {
         title: "Are you feeling comfortable for working with a big team? ",
         type: 0,
-        content: ``
+        content: `I have a strong team spirit. Whether the company is big or small, it all looks like one thing to me. A team.
+        I've been used to working in a team and working in cooperation for over 10 years, so I felt really lonely while lancing alone for the past 3 months.
+        If I work in a team environment, I can make a great contribution to the company and play an active role in promoting cooperation among team members.`
     },
     {
         title: "Why should we hire you? ",
@@ -288,7 +315,7 @@ const data = [
     {
         title: "What are you usually doing when you are free? ",
         type: 0,
-        content: ``
+        content: `Because I sit at a computer all day and work, my health is a major concern. I visit the gym three times a week to take care of my health. I particularly enjoy basketball and swimming. Exercise helps me maintain a positive mindset, it reduces stress, and it increases concentration levels. I also enjoy spending time with my friends, family. It is usually a great talk because it taught me the skill of taking ownership of difficult challenges in my life, and how to achieve my goals.`
     },
     {
         title: "What is difficult for you to answer in the interview? ",
@@ -302,11 +329,6 @@ const data = [
     },
     {
         title: "What do you hate most while working at the company? ",
-        type: 0,
-        content: ``
-    },
-    {
-        title: "What is your salary expectation? ",
         type: 0,
         content: ``
     },
@@ -333,11 +355,6 @@ const data = [
         Functional Components mainly focuses on the UI of the application, not on the behavior.
         To be more precise these are basically render function in the class component.
         Functional Components can have state and mimic lifecycle events using Reach Hooks`
-    },
-    {
-        title: "What can you tell me about web3 to someone who is not technical guy?",
-        type: 2,
-        content: ""
     }
 ];
 
