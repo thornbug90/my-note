@@ -2,7 +2,7 @@ export const hook = [
     {
         title: "What are React Hooks?",
         type: 2,
-        content: `Hooks are a new addition in React 16.8. They let I use state and other React features without writing a class. With Hooks, I can extract stateful logic from a component so it can be tested independently and reused. Hooks allow I to reuse stateful logic without changing your component hierarchy. This makes it easy to share Hooks among many components or with the community.`
+        content: `Hooks are a new addition in React 16.8. They let I use state and other React features without writing a class. With Hooks, I can extract stateful logic from a component so it can be tested independently and reused. Hooks allow I to reuse stateful logic without changing my component hierarchy. This makes it easy to share Hooks among many components or with the community.`
     },
     {
         title: "What are advantages of using React Hooks?",
@@ -47,7 +47,7 @@ export const hook = [
         title: "What are the advantages of Batching in ReactJS?",
         type: 2,
         content: `- Batching is great for performance because it avoids unnecessary re-renders.
-        - Batching also prevents your component from rendering half-finished states where only one state variable was updated, which may cause bugs.
+        - Batching also prevents my component from rendering half-finished states where only one state variable was updated, which may cause bugs.
         - Another reason to use batching is when the web application grows, the number of nested components will increase. Therefore, if a parent component executes an unbatched state updated, the entire component tree will be re-rendered per state update that is expensive.`
     },
     {
@@ -70,7 +70,7 @@ export const hook = [
     {
         title: "When would I use useContext hook?",
         type: 2,
-        content: `React’s useContext hook makes it easy to pass data throughout your app without manually passing props down the tree. React Context is a way to manage state globally. Wrap child components in the Context Provider and supply the state value. Then I can access the user Context in all components:`
+        content: `React’s useContext hook makes it easy to pass data throughout my app without manually passing props down the tree. React Context is a way to manage state globally. Wrap child components in the Context Provider and supply the state value. Then I can access the user Context in all components:`
     },
     {
         title: "Is there any problem when using useContext Hook?",
@@ -97,7 +97,7 @@ export const hook = [
     {
         title: "How can I make use of Error Boundaries in functional React components?",
         type: 2,
-        content: `As of v16.2.0, there's no way to turn a functional component into an error boundary. The componentDidCatch() method works like a JavaScript catch {} block, but for components. Only class components can be error boundaries. In practice, most of the time you’ll want to declare an error boundary component once and use it throughout your application.
+        content: `As of v16.2.0, there's no way to turn a functional component into an error boundary. The componentDidCatch() method works like a JavaScript catch {} block, but for components. Only class components can be error boundaries. In practice, most of the time you’ll want to declare an error boundary component once and use it throughout my application.
 
         Also bear in mind that try/catch blocks won't work on all cases. If a component deep in the hierarchy tries to update and fails, the try/catch block in one of the parents won't work -- because it isn't necessarily updating together with the child.
         A few third party packages on npm implement error boundary hooks.`
@@ -122,7 +122,7 @@ export const hook = [
         title: "What are production use cases for the useRef?",
         type: 2,
         content: `useRef simply returns a plain Javascript object. Its value can be accessed and modified (mutability) as many times as I need without worrying about rerender.
-        useRef value will persist (won't be reset to the initialValue unlike an ordinary object defined in your function component; it persists because useRef gives I the same object instead of creating a new one on subsequent renders) for the component lifetime and across re-renders.
+        useRef value will persist (won't be reset to the initialValue unlike an ordinary object defined in my function component; it persists because useRef gives I the same object instead of creating a new one on subsequent renders) for the component lifetime and across re-renders.
         useRef hook is often used to store values instead of DOM references. These values can either be a state that does not need to change too often or a state that should change as frequently as possible but should not trigger full re-rendering of the component.`
     },
     {
@@ -159,7 +159,7 @@ export const hook = [
         title: "Do Hooks replace render props and higher-order components (HOC)?",
         type: 2,
         content: `Often, render props and higher-order components render only a single child. React team thinks Hooks are a simpler way to serve this use case.
-        There is still a place for both patterns (for example, a virtual scroller component might have a renderItem prop, or a visual container component might have its own DOM structure). But in most cases, Hooks will be sufficient and can help reduce nesting in your tree.`
+        There is still a place for both patterns (for example, a virtual scroller component might have a renderItem prop, or a visual container component might have its own DOM structure). But in most cases, Hooks will be sufficient and can help reduce nesting in my tree.`
     },
     {
         title: "What's the difference between useCallback and useMemo in practice?",
@@ -189,7 +189,7 @@ export const hook = [
         title: "Explain the use of useLayoutEffect React Hook",
         type: 2,
         content: `useLayoutEffect React Hook runs synchronously immediately after React has performed all DOM mutations. This can be useful if I need to make DOM measurements (like getting the scroll position or other styles for an element) and then make DOM mutations or trigger a synchronous re-render by updating the state.
-        As far as scheduling and lifecycle, this works the same way as componentDidMount and componentDidUpdate. Your code runs immediately after the DOM has been updated, but before the browser has had a chance to "paint" those changes (the user doesn't actually see the updates until after the browser has repainted).`
+        As far as scheduling and lifecycle, this works the same way as componentDidMount and componentDidUpdate. my code runs immediately after the DOM has been updated, but before the browser has had a chance to "paint" those changes (the user doesn't actually see the updates until after the browser has repainted).`
     },
     {
         title: "How would you store non-state/instance variables in functional React components?",
@@ -212,13 +212,13 @@ export const hook = [
         content: `While there is no hardcore restriction on how I should define custom hooks and what logic should contain, it's an anti-pattern to write hooks that return JSX.
         There are a few downsides to using hooks to return JSX
         When I write a hook that returns JSX component, I are essentially defining the component within the functional component, so on each and every re-render I will be creating a new instance of the component. This will lead to the component being unmounted and mounted again. This is bad for performance and also buggy if I have stateful login within the component as the state will get reset with every re-render of the parent
-        By defining a JSX component within the hook, I are taking away the option of lazy loading your component if the need be.
+        By defining a JSX component within the hook, I are taking away the option of lazy loading my component if the need be.
         Any performance optimization to the component will require I to make use of useMemo which doesn't give I the flexibility of a custom comparator function like React.memo()
         The benefit on the other hand is that I have control over the state of the component in the parent. However, I can still implement the same logic by using a controlled component approach`
     },
     {
         title: "When would you want to avoid useEffect and use useLayoutEffect instead?",
         type: 2,
-        content: `If your effect is mutating the DOM (via a DOM node ref) and the DOM mutation will change the appearance of the DOM node between the time that it is rendered and your effect mutates it, then I don't want to use useEffect. You'll want to use useLayoutEffect. Otherwise, the user could see a flicker when your DOM mutations take effect. This is pretty much the only time I want to avoid useEffect and use useLayoutEffect instead.`
+        content: `If my effect is mutating the DOM (via a DOM node ref) and the DOM mutation will change the appearance of the DOM node between the time that it is rendered and my effect mutates it, then I don't want to use useEffect. You'll want to use useLayoutEffect. Otherwise, the user could see a flicker when my DOM mutations take effect. This is pretty much the only time I want to avoid useEffect and use useLayoutEffect instead.`
     },
 ];

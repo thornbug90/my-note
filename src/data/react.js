@@ -34,7 +34,7 @@ export const react = [
         content: `Props are inputs to a React component. They are single values or objects containing a set of values that are passed to React Components on creation using a naming convention similar to HTML-tag attributes. i.e, They are data passed down from a parent component to a child component.
 
         The primary purpose of props in React is to provide following component functionality:
-        Pass custom data to your React component.
+        Pass custom data to my React component.
         Trigger state changes.
         Use via this.props.reactProp inside component's render() method.
         This reactProp (or whatever I came up with) name then becomes a property attached to React's native props object which originally already exists on all components created using React library.`
@@ -62,7 +62,7 @@ export const react = [
     {
         title: "What are React Hooks?",
         type: 1,
-        content: `Hooks are a new addition in React 16.8. They let I use state and other React features without writing a class. With Hooks, I can extract stateful logic from a component so it can be tested independently and reused. Hooks allow I to reuse stateful logic without changing your component hierarchy. This makes it easy to share Hooks among many components or with the community.`
+        content: `Hooks are a new addition in React 16.8. They let I use state and other React features without writing a class. With Hooks, I can extract stateful logic from a component so it can be tested independently and reused. Hooks allow I to reuse stateful logic without changing my component hierarchy. This makes it easy to share Hooks among many components or with the community.`
     },
     {
         title: "How would you write an inline style in React?",
@@ -82,7 +82,7 @@ export const react = [
         title: "What are the advantages of using React?",
         type: 1,
         content: `-It is easy to know how a component is rendered, I just need to look at the render function.
-        -JSX makes it easy to read the code of your components. It is also really easy to see the layout, or how -components are plugged/combined with each other.
+        -JSX makes it easy to read the code of my components. It is also really easy to see the layout, or how -components are plugged/combined with each other.
         -I can render React on the server-side. This enables improves SEO and performance.
         -It is easy to test.
         -I can use React with any framework (Backbone.js, Angular.js) as it is only a view layer.`
@@ -102,7 +102,7 @@ export const react = [
     {
         title: "What are refs used for in React?",
         type: 1,
-        content: `Refs are an escape hatch which allow I to get direct access to a DOM element or an instance of a component. In order to use them I add a ref attribute to your component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument.
+        content: `Refs are an escape hatch which allow I to get direct access to a DOM element or an instance of a component. In order to use them I add a ref attribute to my component whose value is a callback function which will receive the underlying DOM element or the mounted instance of the component as its first argument.
         It’s often misconstrued that I need to use a class component in order to use refs, but refs can also be used with functional components by leveraging closures in JavaScript.`
     },
     {
@@ -137,7 +137,7 @@ export const react = [
         title: "When rendering a list what is a key and what is it's purpose?",
         type: 1,
         content: `Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. The best way to pick a key is to use a string that uniquely identifies a list item among its siblings.
-        Most often I would use IDs from your data as keys. When I don't have stable IDs for rendered items, I may use the item index as a key as a last resort. It is not recommend to use indexes for keys if the items can reorder, as that would be slow.`
+        Most often I would use IDs from my data as keys. When I don't have stable IDs for rendered items, I may use the item index as a key as a last resort. It is not recommend to use indexes for keys if the items can reorder, as that would be slow.`
     },
     {
         title: "How to create refs in React?",
@@ -172,13 +172,13 @@ export const react = [
     {
         title: "What are Stateless components in React?",
         type: 1,
-        content: `If the behaviour is independent of its state then it can be a stateless component. I can use either a function or a class for creating stateless components. But unless I need to use a lifecycle hook in your components, I should go for stateless functional components.
+        content: `If the behaviour is independent of its state then it can be a stateless component. I can use either a function or a class for creating stateless components. But unless I need to use a lifecycle hook in my components, I should go for stateless functional components.
         There are a lot of benefits if I decide to use stateless functional components here; they are easy to write, understand, and test, and I can avoid the THIS keyword altogether.`
     },
     {
         title: "How is React different from AngularJS (1.x)?",
         type: 1,
-        content: `For example, AngularJS (1.x) approaches building an application by extending HTML markup and injecting various constructs (e.g. Directives, Controllers, Services) at runtime. As a result, AngularJS is very opinionated about the greater architecture of your application — these abstractions are certainly useful in some cases, but they come at the cost of flexibility.
+        content: `For example, AngularJS (1.x) approaches building an application by extending HTML markup and injecting various constructs (e.g. Directives, Controllers, Services) at runtime. As a result, AngularJS is very opinionated about the greater architecture of my application — these abstractions are certainly useful in some cases, but they come at the cost of flexibility.
         By contrast, React focuses exclusively on the creation of components, and has few (if any) opinions about an application’s architecture. This allows a developer an incredible amount of flexibility in choosing the architecture they deem “best” — though it also places the responsibility of choosing (or building) those parts on the developer.`
     },
     {
@@ -241,13 +241,13 @@ export const react = [
     {
         title: "What is the purpose of using super constructor with props argument in React?",
         type: 1,
-        content: `A child class constructor cannot make use of this reference until super() method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to super() call is to access this.props in your child constructors.`
+        content: `A child class constructor cannot make use of this reference until super() method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to super() call is to access this.props in my child constructors.`
     },
     {
         title: "What happens when you call setState?",
         type: 1,
         content: `The first thing React will do when setState is called is merge the object I passed into setState into the current state of the component. This will kick off a process called reconciliation. The end goal of reconciliation is to, in the most efficient way possible, update the UI based on this new state.
-        To do this, React will construct a new tree of React elements (which I can think of as an object representation of your UI). Once it has this tree, in order to figure out how the UI should change in response to the new state, React will diff this new tree against the previous element tree.
+        To do this, React will construct a new tree of React elements (which I can think of as an object representation of my UI). Once it has this tree, in order to figure out how the UI should change in response to the new state, React will diff this new tree against the previous element tree.
         By doing this, React will then know the exact changes which occurred, and by knowing exactly what changes occurred, will able to minimize its footprint on the UI by only making updates where absolutely necessary.`
     },
     {
@@ -281,7 +281,7 @@ export const react = [
     {
         title: "Name the different lifecycle methods for a class components",
         type: 1,
-        content: `- componentWillMount- this is most commonly used for App configuration in your root component.
+        content: `- componentWillMount- this is most commonly used for App configuration in my root component.
         - componentDidMount - here I want to do all the setup I couldn’t do without a DOM, and start getting all the data I need. Also if I want to set up eventListeners etc. this lifecycle hook is a good place to do that.
         - componentWillReceiveProps - this lifecyclye acts on particular prop changes to trigger state transitions.
         shouldComponentUpdate - if you’re worried about wasted renders shouldComponentUpdate is a great place to improve performance as it allows I to prevent a rerender if component receives new prop.
@@ -506,7 +506,7 @@ export const react = [
         title: "What are the advantages of Batching in ReactJS?",
         type: 1,
         content: `- Batching is great for performance because it avoids unnecessary re-renders.
-        - Batching also prevents your component from rendering half-finished states where only one state variable was updated, which may cause bugs.
+        - Batching also prevents my component from rendering half-finished states where only one state variable was updated, which may cause bugs.
         - Another reason to use batching is when the web application grows, the number of nested components will increase. Therefore, if a parent component executes an unbatched state updated, the entire component tree will be re-rendered per state update that is expensive.`
     },
     {
@@ -537,7 +537,7 @@ export const react = [
     {
         title: "How can I make use of Error Boundaries in functional React components?",
         type: 1,
-        content: `As of v16.2.0, there's no way to turn a functional component into an error boundary. The componentDidCatch() method works like a JavaScript catch {} block, but for components. Only class components can be error boundaries. In practice, most of the time you’ll want to declare an error boundary component once and use it throughout your application.
+        content: `As of v16.2.0, there's no way to turn a functional component into an error boundary. The componentDidCatch() method works like a JavaScript catch {} block, but for components. Only class components can be error boundaries. In practice, most of the time you’ll want to declare an error boundary component once and use it throughout my application.
 
         Also bear in mind that try/catch blocks won't work on all cases. If a component deep in the hierarchy tries to update and fails, the try/catch block in one of the parents won't work -- because it isn't necessarily updating together with the child.
         A few third party packages on npm implement error boundary hooks.`
@@ -562,8 +562,8 @@ export const react = [
     {
         title: "Explain the Virtual DOM concept in React",
         type: 1,
-        content: `In React, each of your components have a state. This state is like an observable I might find in knockout or other MVVM style libraries. Essentially, React knows when to re-render the scene because it is able to observe when this data changes. Dirty checking is slower than observables because I must poll the data at a regular interval and check all of the values in the data structure recursively. By comparison, setting a value on the state will signal to a listener that some state has changed, so React can simply listen for change events on the state and queue up re-rendering.
-        The virtual DOM is used for efficient re-rendering of the DOM. This isn't really related to dirty checking your data. I could re-render using a virtual DOM with or without dirty checking. With ReactJS, each time a change is triggered (by a query or a user’s action, for instance), the entire virtual DOM is updated. ReactJS keeps two versions of the virtual DOM in memory — an updated virtual DOM and a copy made before the update. After the update, ReactJS compares these two versions to find the elements that have changed. Then it updates only the part of the real DOM that has changed. There is some overhead in computing the diff between two virtual trees, but the virtual DOM diff is about understanding what needs updating in the DOM and not whether or not your data has changed.`
+        content: `In React, each of my components have a state. This state is like an observable I might find in knockout or other MVVM style libraries. Essentially, React knows when to re-render the scene because it is able to observe when this data changes. Dirty checking is slower than observables because I must poll the data at a regular interval and check all of the values in the data structure recursively. By comparison, setting a value on the state will signal to a listener that some state has changed, so React can simply listen for change events on the state and queue up re-rendering.
+        The virtual DOM is used for efficient re-rendering of the DOM. This isn't really related to dirty checking my data. I could re-render using a virtual DOM with or without dirty checking. With ReactJS, each time a change is triggered (by a query or a user’s action, for instance), the entire virtual DOM is updated. ReactJS keeps two versions of the virtual DOM in memory — an updated virtual DOM and a copy made before the update. After the update, ReactJS compares these two versions to find the elements that have changed. Then it updates only the part of the real DOM that has changed. There is some overhead in computing the diff between two virtual trees, but the virtual DOM diff is about understanding what needs updating in the DOM and not whether or not my data has changed.`
     },
     {
         title: "Describe Flux vs MVC?",
@@ -577,9 +577,9 @@ export const react = [
     {
         title: "Can you force a React component to rerender without calling setState?",
         type: 1,
-        content: `In your component, I can call this.forceUpdate() to force a rerender. Another way is this.setState(this.state);
+        content: `In my component, I can call this.forceUpdate() to force a rerender. Another way is this.setState(this.state);
         forceUpdate should be avoided because it deviates from a React mindset. The React docs cite an example of when forceUpdate might be used:
-        By default, when your component's state or props change, your component will re-render. However, if these change implicitly (eg: data deep within an object changes without changing the object itself) or if your render() method depends on some other data, I can tell React that it needs to re-run render() by calling forceUpdate().`
+        By default, when my component's state or props change, my component will re-render. However, if these change implicitly (eg: data deep within an object changes without changing the object itself) or if my render() method depends on some other data, I can tell React that it needs to re-run render() by calling forceUpdate().`
     },
     {
         title: "Why does React use SyntheticEvents?",
@@ -631,7 +631,7 @@ export const react = [
     {
         title: "Why doesn't this.props.children.map work?",
         type: 1,
-        content: `this.props.children is an opaque data structure. It can be either an array or a single element. In your case, this.props.children is probably a single element, which is why the .map() method is undefined.
+        content: `this.props.children is an opaque data structure. It can be either an array or a single element. In my case, this.props.children is probably a single element, which is why the .map() method is undefined.
         I should use the React.Children API when manipulating the children prop.`
     },
     {
@@ -649,12 +649,12 @@ export const react = [
         type: 1,
         content: `yes.
         There is a method boolean shouldComponentUpdate(object nextProps, object nextState), each component has this method and it's responsible to determine "should component update (run render function)?" every time I change state or pass new props from parent component.
-        I can write your own implementation of shouldComponentUpdate method for your component, but default implementation always returns true - meaning always re-run render function.`
+        I can write my own implementation of shouldComponentUpdate method for my component, but default implementation always returns true - meaning always re-run render function.`
     },
     {
         title: "Describe how events are handled in React",
         type: 1,
-        content: `In order to solve cross browser compatibility issues, your event handlers in React will be passed instances of SyntheticEvent, which is React’s cross-browser wrapper around the browser’s native event. These synthetic events have the same interface as native events you’re used to, except they work identically across all browsers.
+        content: `In order to solve cross browser compatibility issues, my event handlers in React will be passed instances of SyntheticEvent, which is React’s cross-browser wrapper around the browser’s native event. These synthetic events have the same interface as native events you’re used to, except they work identically across all browsers.
         What’s mildly interesting is that React doesn’t actually attach events to the child nodes themselves. React will listen to all events at the top level using a single event listener. This is good for performance and it also means that React doesn’t need to worry about keeping track of event listeners when updating the DOM.
         `
     },
@@ -722,7 +722,7 @@ export const react = [
         title: "When would you use flushSync in ReactJS?",
         type: 1,
         content: `React 18 adds out-of-the-box performance improvements by doing more batching (automated) by default. Batching is when React groups multiple state updates into a single re-render for better performance.
-        To opt-out of automatic batching, I can use flushSync so your component will be re-rendered after each state update. I might need it when for example some code may depend on reading something from the DOM immediately after a state change.`
+        To opt-out of automatic batching, I can use flushSync so my component will be re-rendered after each state update. I might need it when for example some code may depend on reading something from the DOM immediately after a state change.`
     },
     {
         title: "When shall we use useReducer hook in ReactJS?",
@@ -738,7 +738,7 @@ export const react = [
         use useState if I have:
         - JavaScript primitives as state
         - Simple state transitions
-        - Business logic within your component
+        - Business logic within my component
         - Different properties that don't change in any correlated way and can be managed by multiple useState hooks.
         use useReducer if I have:
         - JavaScript objects or arrays as state
@@ -789,8 +789,8 @@ export const react = [
         title: "How to avoid the need for binding in React?",
         type: 1,
         content: `There are several common approaches used to avoid methods binding in React:
-        - Define Your Event Handler as an Inline Arrow Function
-        - Define Your Event Handler as an Arrow Function Assigned to a Class Field
+        - Define my Event Handler as an Inline Arrow Function
+        - Define my Event Handler as an Arrow Function Assigned to a Class Field
         - Use a Function Component with Hooks`
     },
     {
@@ -798,7 +798,7 @@ export const react = [
         type: 1,
         content: `There are two steps of what we may call render:
         - Virtual DOM render: when render method is called it returns a new virtual dom structure of the component. This render method is called always when I call setState(), because shouldComponentUpdate always returns true by default. So, by default, there is no optimisation here in React.
-        - Native DOM render: React changes real DOM nodes in your browser only if they were changed in the Virtual DOM and as little as needed - this is that great React's feature which optimizes real DOM mutation and makes React fast.`
+        - Native DOM render: React changes real DOM nodes in my browser only if they were changed in the Virtual DOM and as little as needed - this is that great React's feature which optimizes real DOM mutation and makes React fast.`
     },
     {
         title: "How to use React.memo()?",
@@ -812,7 +812,7 @@ export const react = [
         content: `While there is no hardcore restriction on how I should define custom hooks and what logic should contain, it's an anti-pattern to write hooks that return JSX.
         There are a few downsides to using hooks to return JSX
         - When I write a hook that returns JSX component, I are essentially defining the component within the functional component, so on each and every re-render I will be creating a new instance of the component. This will lead to the component being unmounted and mounted again. This is bad for performance and also buggy if I have stateful login within the component as the state will get reset with every re-render of the parent
-        - By defining a JSX component within the hook, I are taking away the option of lazy loading your component if the need be.
+        - By defining a JSX component within the hook, I are taking away the option of lazy loading my component if the need be.
         - Any performance optimization to the component will require I to make use of useMemo which doesn't give I the flexibility of a custom comparator function like React.memo()
         The benefit on the other hand is that I have control over the state of the component in the parent. However, I can still implement the same logic by using a controlled component approach`
     },

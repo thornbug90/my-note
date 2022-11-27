@@ -42,7 +42,7 @@ const Home = () => {
 
     return (
         <div className="d-flex align-items-center justify-content-center mt-3">
-            <div className="container" style={{ maxWidth: "600px" }}>
+            <div className="container" style={{ maxWidth: "600px", marginBottom: "500px" }}>
                 <div>
                     {
                         types.map((type, index) => {
