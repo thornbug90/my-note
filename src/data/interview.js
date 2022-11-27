@@ -1,6 +1,6 @@
-export const types = ["Interview", "React", "Full Stack"];
+export const types = ["Interview", "React", "React Hook"];
 
-const data = [
+export const interview = [
     {
         title: "Tell me about yourself",
         type: 0,
@@ -250,22 +250,18 @@ const data = [
     {
         title: "Briefly summarize your recent contributions to either a web application or API service.",
         type: 0,
-        content: `https://www.radissonhotels.com/en-us/ is my recent project.
-        It was a hospital booking agency site.
-        The basic function of the project is to allow users to search and book hotels around the world.
-        Most of what I was responsible for in this project was frontend.
-        As for a frontend development, I have used React, material UI, CSS, axios for the rest api, react-saga for redux.
-        This site consists of a landing page, a search component, a category page for displaying the hotel list, and a reservation page.
-        I gave importance to the code optimization and the render speed.
-        The most exciting thing was that I used lots of react hook functions in this project so that the page rendering speed fastened enough.
-        Furthermore, all of the components use tailwind css, so there are no external css files.
-        All the styles were integrated in js.
-        The most difficult technical issue was that the search engine for the hotels should be flexible.
-        The result of search is huge data for users and it should be easy to read and check.
-        So we thought that pagination would be good for the page layout at the very first time.
-        But I suggested the usage Loadmore button rather than the pagination.
-        If a user scroll down to the bottom, the page loads more data automatically and add more in the list.
-        It was just simple idea, but it gave us many good reviews.`
+        content: `https://projectisla.co/ is my recent project.
+        This site uses versatile search tools to explore our database of hospital information and hospital analytics.  It creates a list or a map of hospitals that match the interests of customers near their location. 
+        This provides data, statistics, and analytics about more than 3,000 hospitals nationwide. 
+        Elasticsearch was used as a search engine for data processing.
+        I used Django python framework for the backend and React for the frontend.
+        Most of what I was responsible for in this project was frontend, REST api and admin dashboard.
+        As for a development on my side, I have used React, material UI, Tailwind CSS, Axios for the REST api, react-saga for redux.
+        This site consists of a landing page, a research component, a category page for displaying the hospital list, and a reservation page.
+        I gave importance to the code optimization, responsiveness and the render speed.
+        The most exciting thing was that I used some of react hook functions in this project such as useMemo, useCallback so that I can reduce unnecessary rendering into components.
+        As a result, my customers gave me good feedbacks and reviews.
+        Finally, I deploy this on the AWS EC2 after domain purchase.`
     },
     {
         title: "Do you relocate?",
@@ -331,31 +327,5 @@ const data = [
         title: "What do you hate most while working at the company? ",
         type: 0,
         content: ``
-    },
-    {
-        title: "How does React work?",
-        type: 1,
-        content: `React creates a virtual DOM.\nWhen state changes in a component it firstly runs a "diffing" algorithm, which identifies what has changed in the virtual DOM.
-            The second step is reconciliation, where it updates the DOM with the results of diff.`
-    },
-    {
-        title: "What is React?",
-        type: 1,
-        content: `React is an open-source JavaScript library created by Facebook for building complex, interactive UIs in web and mobile applications. React’s core purpose is to build UI components; it is often referred to as just the “V” (View) in an “MVC” architecture.`
-    },
-    {
-        title: "Difference between class components and functional components?",
-        type: 1,
-        content: `<Class Components>:
-        Class-based Components uses ES6 class syntax. It can make use of the lifecycle methods.
-        Class components extend from React.Component.
-        In here you have to use this keyword to access the props and functions that you declare inside the class components.
-        <Functional Components>: 
-        Functional Components are simpler comparing to class-based functions.
-        Functional Components mainly focuses on the UI of the application, not on the behavior.
-        To be more precise these are basically render function in the class component.
-        Functional Components can have state and mimic lifecycle events using Reach Hooks`
     }
 ];
-
-export default data;

@@ -6,7 +6,9 @@ import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import FocusLock from 'react-focus-lock';
 
-import data, { types } from "../data";
+import { types, interview } from "../data/interview";
+import { react } from "../data/react";
+import { hook } from "../data/hook";
 import "./style.css";
 
 const Home = () => {
@@ -25,6 +27,11 @@ const Home = () => {
             else if (e.key === "/") { //Give input focus
                 e.preventDefault();
                 inputRef.current.focus();
+                inputRef.current.select();
+            }
+            else if (e.key === "\\") { //Content Search
+                e.preventDefault();
+                setWithContent(prev => !prev);
             }
         });
 
@@ -63,7 +70,7 @@ const Home = () => {
                             className="white d-flex align-items-center justify-content-center pe-2"
                             type="checkbox"
                             checked={withContent}
-                            label={`content`}
+                            label={`Content(\\)`}
                             onChange={e => setWithContent(e.target.checked)}
                         />
                         <Form.Control
@@ -75,7 +82,7 @@ const Home = () => {
                         />
                     </div>
                     <Accordion className="mt-1">
-                        {data.sort((a, b) => a < b).filter(d => {
+                        {[...interview, ...react, ...hook].sort((a, b) => a < b).filter(d => {
                             const keywords = keyword.split(" ");
                             if (withContent) {
                                 return keywords.every((key) => {
