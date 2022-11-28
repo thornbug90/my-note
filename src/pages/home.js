@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Form from 'react-bootstrap/Form';
 import Accordion from 'react-bootstrap/Accordion';
 import Highlighter from "react-highlight-words";
@@ -8,6 +8,7 @@ import FocusLock from 'react-focus-lock';
 
 import { types, interview } from "../data/interview";
 import { react } from "../data/react";
+import { javascript } from "../data/javascript";
 import { hook } from "../data/hook";
 import "./style.css";
 
@@ -17,28 +18,30 @@ const Home = () => {
     const [category, setCategory] = useState([]);
     const inputRef = useRef();
 
-    useEffect(() => {
-        window.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") { //Escape key pressed
-                e.preventDefault();
-                inputRef.current.focus();
-                setKeyword("");
-            }
-            else if (e.key === "/") { //Give input focus
-                e.preventDefault();
-                inputRef.current.focus();
-                inputRef.current.select();
-            }
-            else if (e.key === "\\") { //Content Search
-                e.preventDefault();
-                setWithContent(prev => !prev);
-            }
-        });
-
-        return () => {
-            window.removeEventListener("keydown", null);
+    const handleUserKeyup = useCallback(e => {
+        if (e.key === "Escape") { //Escape key pressed
+            e.preventDefault();
+            inputRef.current.focus();
+            setKeyword("");
+        }
+        else if (e.key === "/") { //Give input focus
+            e.preventDefault();
+            inputRef.current.focus();
+            inputRef.current.select();
+        }
+        else if (e.key === "\\") { //Content Search
+            e.preventDefault();
+            setWithContent(prev => !prev);
         }
     }, []);
+    
+    useEffect(() => {
+        window.addEventListener("keyup", handleUserKeyup);
+
+        return () => {
+            window.removeEventListener("keyup", handleUserKeyup);
+        }
+    }, [handleUserKeyup]);
 
     return (
         <div className="d-flex align-items-center justify-content-center mt-3">
@@ -82,7 +85,7 @@ const Home = () => {
                         />
                     </div>
                     <Accordion className="mt-1">
-                        {[...interview, ...react, ...hook].sort((a, b) => a < b).filter(d => {
+                        {[...interview, ...react, ...hook, ...javascript].sort((a, b) => a < b).filter(d => {
                             const keywords = keyword.split(" ");
                             if (withContent) {
                                 return keywords.every((key) => {
@@ -110,7 +113,7 @@ const Home = () => {
                                                 textToHighlight={datum.title}
                                             />
                                         </Accordion.Header>
-                                        <Accordion.Body className="text-start">
+                                        <Accordion.Body className="text-start text-content">
                                             <Highlighter
                                                 highlightClassName="highlight"
                                                 searchWords={keyword.split(" ")}

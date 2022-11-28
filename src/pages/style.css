@@ -35,3 +35,13 @@
 .white {
     color: white !important;
 }
+
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em !important;
+}
+
+.text-content {
+    white-space: pre-line;
+}

@@ -1,4 +1,4 @@
-export const types = ["Interview", "React", "React Hook"];
+export const types = ["Interview", "React", "React Hook", "JavaScript"];
 
 export const interview = [
     {
