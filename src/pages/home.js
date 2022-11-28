@@ -84,7 +84,7 @@ const Home = () => {
                             onChange={e => setKeyword(e.target.value)}
                         />
                     </div>
-                    <Accordion className="mt-1">
+                    <Accordion className="mt-1 preline">
                         {[...interview, ...react, ...hook, ...javascript].sort((a, b) => a < b).filter(d => {
                             const keywords = keyword.split(" ");
                             if (withContent) {

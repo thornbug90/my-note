@@ -562,8 +562,12 @@ export const react = [
     {
         title: "Explain the Virtual DOM concept in React",
         type: 1,
-        content: `In React, each of my components have a state. This state is like an observable I might find in knockout or other MVVM style libraries. Essentially, React knows when to re-render the scene because it is able to observe when this data changes. Dirty checking is slower than observables because I must poll the data at a regular interval and check all of the values in the data structure recursively. By comparison, setting a value on the state will signal to a listener that some state has changed, so React can simply listen for change events on the state and queue up re-rendering.
-        The virtual DOM is used for efficient re-rendering of the DOM. This isn't really related to dirty checking my data. I could re-render using a virtual DOM with or without dirty checking. With ReactJS, each time a change is triggered (by a query or a user’s action, for instance), the entire virtual DOM is updated. ReactJS keeps two versions of the virtual DOM in memory — an updated virtual DOM and a copy made before the update. After the update, ReactJS compares these two versions to find the elements that have changed. Then it updates only the part of the real DOM that has changed. There is some overhead in computing the diff between two virtual trees, but the virtual DOM diff is about understanding what needs updating in the DOM and not whether or not my data has changed.`
+        content: `In React, each of my components have a state. This state is like an observable I might find in knockout or other MVVM style libraries. Essentially, React knows when to re-render the scene because it is able to observe when this data changes.
+        Dirty checking is slower than observables because I must poll the data at a regular interval and check all of the values in the data structure recursively. By comparison, setting a value on the state will signal to a listener that some state has changed, so React can simply listen for change events on the state and queue up re-rendering.
+        The virtual DOM is used for efficient re-rendering of the DOM. This isn't really related to dirty checking my data. I could re-render using a virtual DOM with or without dirty checking. With ReactJS, each time a change is triggered (by a query or a user’s action, for instance), the entire virtual DOM is updated.
+        ReactJS keeps two versions of the virtual DOM in memory — an updated virtual DOM and a copy made before the update. After the update, ReactJS compares these two versions to find the elements that have changed.
+        Then it updates only the part of the real DOM that has changed.
+        There is some overhead in computing the diff between two virtual trees, but the virtual DOM diff is about understanding what needs updating in the DOM and not whether or not my data has changed.`
     },
     {
         title: "Describe Flux vs MVC?",
@@ -715,7 +719,8 @@ export const react = [
     {
         title: "What is difference between Incremental DOM and Virtual DOM?",
         type: 1,
-        content: `- Incremental DOM is a library for building up DOM trees and updating them in-place when data changes. It differs from the established virtual DOM approach in that no intermediate tree is created (the existing tree is mutated in-place). This approach significantly reduces memory allocation and GC thrashing for incremental updates to the DOM tree therefore increasing performance significantly in some cases.
+        content: `- Incremental DOM is a library for building up DOM trees and updating them in-place when data changes. It differs from the established virtual DOM approach in that no intermediate tree is created (the existing tree is mutated in-place).
+        This approach significantly reduces memory allocation and GC thrashing for incremental updates to the DOM tree therefore increasing performance significantly in some cases.
         - Virtual DOM compares (diff) a new entire virtual DOM with the previous virtual DOM for changes then applies those changes to the actual DOM. - This approach creates a new virtual DOM to determine the changes (memory heavy). Has a big memory footprint because it needs headroom for changes that "might" happen to the virtual DOM.`
     },
     {

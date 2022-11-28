@@ -5,6 +5,10 @@
     text-decoration: underline;
 }
 
+.preline {
+    white-space: pre-line;
+}
+
 .form-control {
     background: #494646;
     color: white;

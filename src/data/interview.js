@@ -36,23 +36,25 @@ export const interview = [
     {
         title: "Why are you interested in this job?",
         type: 0,
-        content: `Since pandemic, I would like to work for the people care. So I've worked some projects such as hospital infrastructure, working agency, crypto security and some more.
-        As cryptocurrencies expanded, scams increased.
-        So our company, which was a blockchain company, suffered a lot.
-        I would like to prevent illegal activities such as site phishing by misleading web technologies, and I wanted to show people true web technologies.
-        Luckily, finding a job, I found out that your company is working as a primary mission to ...
-        This is a job I really would like to work as a software developer.
+        content: `Since pandemic, I would like to work for the health care. So I've worked some projects such as hospital infrastructure, working agency, crypto security and some more.
+        Luckily, finding a job, I found out that your company is working as a primary mission to help people live healthier lives! Perfect same to my goal.
+        And your company will host its annual Investor Conference with analysts and institutional investors in New York City tomorrow.
+        In conjunction with the Investor Conference, an updated view of financial performance for 2022 and the initial outlook for 2023 was released just a few minutes ago.
+        This is a job I really would like to work as a software engineer.
         And it's fun to work in a company where people truly believe in what they're doing!`
     },
     {
         title: "What motivates you to work at this company?",
         type: 0,
-        content: "I'm really driven by results. I like it when I have a concrete goal to meet and actual roadmap to figure out a strong strategy for accomplishing it. At my last job, our yearly goals were very aggressive, but I worked with my manager and the rest of my team to figure out a month-by-month strategy for meeting the year-end numbers. It was a real thrill to accomplish that."
+        content: `I'm really driven by results. I like it when I have a concrete goal to meet and actual roadmap to figure out a strong strategy for accomplishing it.
+        At my last job, our yearly goals were very aggressive, but I worked with my manager and the rest of my team to figure out a month-by-month strategy for meeting the year-end numbers. It was a real thrill to accomplish that.`
     },
     {
         title: "What motivates you to apply for this particular role? ",
         type: 0,
-        content: "When I was a sophomore, I really loved art and design. So I wanted to get a job for both art and science. That is the frontend postion, I think. I am happy that my creations come into direct contact with people, and I feel the greatest pride when I receive the best feedback from them. I am also motivated by working as part of a team to complete tasks and projects. I gain a great sense of job satisfaction when I know I have contributed to a team's goals or objectives."
+        content: `When I was a sophomore, I really loved art and design. So I wanted to get a job for both art and science. That is the frontend postion, I think.
+        I am happy that my creations come into direct contact with people, and I feel the greatest pride when I receive the best feedback from them. I am also motivated by working as part of a team to complete tasks and projects.
+        I gain a great sense of job satisfaction when I know I have contributed to a team's goals or objectives.`
     },
 
     {
@@ -76,13 +78,15 @@ export const interview = [
     {
         title: "What do you feel about the Los Angeles?",
         type: 0,
-        content: `It’s amazing how many cultures can call Los Angeles home. As I drive through the city I can’t help but see signs the numerous areas of LA that make it so special; Chinatown, Silver Lake, The Arts District. Here brings people of all colors, cultures, and creeds together like nowhere else!
+        content: `It’s amazing how many cultures can call Los Angeles home. As I drive through the city I can’t help but see signs the numerous areas of LA that make it so special; Chinatown, Silver Lake, The Arts District.
+        Here brings people of all colors, cultures, and creeds together like nowhere else!
         People are so nice and the weather is just perfect all year round - always-sunny weather. I would like to live here for the rest of my life.`
     },
     {
         title: "How did you work before?",
         type: 0,
-        content: `At my previous company, I’ve learned a lot about how to make the most of a project and how to work closely with different team members. I’ve been proud of how each member was able to feel confident enough to make suggestions on ways to ensure the success of the project. In my role, I was responsible for directing a team of five and pulling together strategies and plans to develop the websites and maximize the efforts of the company.
+        content: `At my previous company, I’ve learned a lot about how to make the most of a project and how to work closely with different team members.
+        I’ve been proud of how each member was able to feel confident enough to make suggestions on ways to ensure the success of the project. In my role, I was responsible for directing a team of five and pulling together strategies and plans to develop the websites and maximize the efforts of the company.
         In one year, we made more than $200M in revenue, and I consider this to be the greatest achievement of my career.
         I am known for coming in early and staying late to finish important tasks and achieve results.
         I guess working for 10 hours a day for three hundred days did that to me.
@@ -193,7 +197,8 @@ export const interview = [
         type: 0,
         content: `I’ve never been one to give up, even on my personal life, and that personality trait has definitely transpired into my career. When I’m involved in a project, I like to feel like I actually contributed to it in a significant way and that’s what feeds my determination and focus.
         To state my strength and weakness can be a little confusing because both of the two concepts are same for me. My quality of being self-motivated. I can work hard and consistently to achieve a goal if that helps me in growing and learning. I can motivate myself to do a task even when there are multiple obstacles and I can complete it.
-        However, my weakness is being over self-motivated because in that process I lose myself and get too goal oriented. If it is a team task then my self-goals become a burden for them and as a result, I come across clashes and group breakdowns sometimes. I have been working on this for the last few months where I set a limit for myself and for the team and try not to affect my goals and objectives becomes a pressure for the others.
+        However, my weakness is being over self-motivated because in that process I lose myself and get too goal oriented. If it is a team task then my self-goals become a burden for them and as a result, I come across clashes and group breakdowns sometimes.
+        I have been working on this for the last few months where I set a limit for myself and for the team and try not to affect my goals and objectives becomes a pressure for the others.
         In a word, both my strength and weakness arise from the same quality.`
     },
     {
@@ -214,9 +219,9 @@ export const interview = [
         content: `I can do my best in a strong cooperative environment out of company members, and I can strive to achieve great goals while helping and learning from each other.
         I like a quiet environment when I work, but I really like to discuss new technologies and company roadmaps frequently.
         To point out my work style:
-        passion
+        passionate
         Result-drvien
-        deadline-driven
+        high-energy
         motivation.
         `
     },
