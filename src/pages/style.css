@@ -5,6 +5,10 @@
     text-decoration: underline;
 }
 
+.preline {
+    white-space: pre-line;
+}
+
 .form-control {
     background: #494646;
     color: white;
@@ -33,5 +37,10 @@
 }
 
 .white {
+    color: white !important;
+}
+
+.text-body {
+    text-indent: 2ch;
     color: white !important;
 }

@@ -81,7 +81,7 @@ const Home = () => {
                             onChange={e => setKeyword(e.target.value)}
                         />
                     </div>
-                    <Accordion className="mt-1">
+                    <Accordion className="mt-1 preline">
                         {[...interview, ...react, ...hook].sort((a, b) => a < b).filter(d => {
                             const keywords = keyword.split(" ");
                             if (withContent) {
@@ -110,7 +110,7 @@ const Home = () => {
                                                 textToHighlight={datum.title}
                                             />
                                         </Accordion.Header>
-                                        <Accordion.Body className="text-start">
+                                        <Accordion.Body className="text-start text-body">
                                             <Highlighter
                                                 highlightClassName="highlight"
                                                 searchWords={keyword.split(" ")}
