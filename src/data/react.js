@@ -13,15 +13,8 @@ export const react = [
     {
         title: "Difference between class components and functional components?",
         type: 1,
-        content: `<Class Components>:
-        Class-based Components uses ES6 class syntax. It can make use of the lifecycle methods.
-        Class components extend from React.Component.
-        In here I have to use this keyword to access the props and functions that I declare inside the class components.
-        <Functional Components>: 
-        Functional Components are simpler comparing to class-based functions.
-        Functional Components mainly focuses on the UI of the application, not on the behavior.
-        To be more precise these are basically render function in the class component.
-        Functional Components can have state and mimic lifecycle events using Reach Hooks`
+        content: `A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element. A class component requires you to extend from React.Component and create a render function which also returns a React element. Before the usage of hooks, the functional components were stateless.
+        Now in functioal components, we can use React hook functions like useState, useEffect instead of lifecycle methods in class components.`
     },
     {
         title: "What is Context API in ReactJS?",
@@ -158,7 +151,7 @@ export const react = [
     {
         title: "What is JSX?",
         type: 1,
-        content: `JSX is a syntax notation for JavaScript XML (XML-like syntax extension to ECMAScript). It stands for JavaScript XML. It provides expressiveness of JavaScript along with HTML like template syntax. For example, in React, I can write html like code and it returns as javascript function to the render function.`
+        content: `JSX is a syntax notation for JavaScript XML (XML-like syntax extension to ECMAScript). It stands for JavaScript XML. It provides expressiveness of JavaScript along with HTML like template syntax. For example, in React, I can write html-like code and it returns as javascript function to the render function.`
     },
     {
         title: "What are the limitations of React?",
@@ -837,5 +830,40 @@ export const react = [
         - useInsertionEffect
         - useLayoutEffect
         - useEffect`
+    },
+    {
+        title: "What is Promise?",
+        type: 1,
+        content: `JavaScript is single threaded, meaning that two bits of script cannot run at the same time; they have to run one after another.
+        A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+        `
+    },
+    {
+        title: "What is async await keyword?",
+        type: 1,
+        content: `Async/Await is used to work with promises in asynchronous functions. It is basically syntactic sugar for promises. It is just a wrapper to restyle code and make promises easier to read and use. It makes asynchronous code look more like synchronous/procedural code, which is easier to understand
+        `
+    },
+    {
+        title: "What is AWS lambda?",
+        type: 1,
+        content: `Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, and logging.
+        Lambda is ideal for short-term tasks. AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually any type of application or backend service without provisioning or managing servers.`
+    },
+    {
+        title: "What is AWS EC2?",
+        type: 1,
+        content: `EC2 is the AWS computing service, which offers computing capacity on demand with immediate availability and no set commitment to length of use. S3 is the AWS's first service. It offers the object storage over the web.`
+    },
+    {
+        title: "What is Microsoft Azure?",
+        type: 1,
+        content: `Azure is the only consistent hybrid cloud, delivers unparalleled developer productivity, provides comprehensive, multilayered security, including the largest compliance coverage of any cloud provider, and you’ll pay less for Azure as AWS is five times more expensive than Azure for Windows Server and SQL Server.`
+    },
+    {
+        title: "What is Microsoft Azure?",
+        type: 1,
+        content: `Async/Await is used to work with promises in asynchronous functions. It is basically syntactic sugar for promises. It is just a wrapper to restyle code and make promises easier to read and use. It makes asynchronous code look more like synchronous/procedural code, which is easier to understand
+        `
     },
 ];
