@@ -9,6 +9,7 @@ import FocusLock from 'react-focus-lock';
 import { types, interview } from "../data/interview";
 import { react } from "../data/react";
 import { javascript } from "../data/javascript";
+import { AWS } from "../data/AWS";
 import { hook } from "../data/hook";
 import "./style.css";
 
@@ -92,7 +93,7 @@ const Home = () => {
                             />
                         </div>
                         <Accordion className="mt-1 preline">
-                            {[...interview, ...react, ...hook, ...javascript].sort((a, b) => a < b).filter(d => {
+                            {[...interview, ...react, ...hook, ...javascript, ...AWS].sort((a, b) => a < b).filter(d => {
                                 const keywords = keyword.split(" ");
                                 if (withContent) {
                                     return keywords.every((key) => {
