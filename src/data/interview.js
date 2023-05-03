@@ -2,6 +2,23 @@ export const types = ["Interview", "React", "React Hook", "JavaScript", "AWS"];
 
 export const interview = [
     {
+        title: "openai chatgpt project ai",
+        type: 0,
+        content: `One of the most impressive projects I worked on involved natural language processing (NLP) and machine learning (ML) to create a search site. The site utilized NLP to extract relevant files and responses from a large database based on user input in natural language. Similar to Google, this site was able to search through various types of data including news, scientific and technical information, and more. 
+
+To process the data, Elasticsearch was used for its powerful querying capabilities. When a user entered a search term, an Elasticsearch query was generated using OpenAI's technology. The query was then pre-processed and passed on to the search engine.
+I used node.js for the backend and React for the frontend.
+Most of what I was responsible for in this project was frontend, REST api and admin dashboard.
+As for a development on my side, I have used React, material UI, Tailwind CSS, Axios for the REST api, react-saga for redux.
+
+Another interesting project I worked on was a chatbot that utilized ML. Two key features of this chatbot were its learning function and field selection. To train the chatbot, learning materials were manually prepared and the chatbot was trained for a week. During this time, the field was set as healthcare and appropriate information was selected and learned. As a result, customer service work was reduced by over 20%.
+
+I gave importance to the code optimization, responsiveness and the render speed.
+The most exciting thing was that I used some of react hook functions in this project such as useMemo, useCallback so that I can reduce unnecessary rendering into components.
+As a result, my customers gave me good feedbacks and reviews.
+        `
+    }
+    {
         title: "Tell me about yourself",
         type: 0,
         content: `First of all, let me tell you about myself.
